@@ -6,6 +6,12 @@ import {
 } from "react-router-dom";
 import App from './App.jsx';
 import './index.css';
+import Home from './components/Home/Home.jsx';
+import About from './components/About/About.jsx';
+import BgoEvents from './components/BgoEvents/BgoEvents.jsx';
+import Resources from './components/Resources/Resources.jsx';
+import Gallery from './components/Gallery/Gallery.jsx';
+import Contact from './components/Contact/Contact.jsx';
 
 const router = createBrowserRouter([
   {
@@ -14,11 +20,27 @@ const router = createBrowserRouter([
     children:[
       {
         path: "/",
-        element : <div>This is home page</div>,
+        element : <Home></Home>,
       },
       {
         path: "/about",
-        element: <div>This is about page</div>,
+        element: <About></About>,
+      },
+      {
+        path: "/bgoevents",
+        element: <BgoEvents></BgoEvents>,
+      },
+      {
+        path: "/resources",
+        element: <Resources></Resources>,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery></Gallery>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
       }
     ]
   },
