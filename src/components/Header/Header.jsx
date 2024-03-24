@@ -1,7 +1,7 @@
 import Navigation from "../Navigation/Navigation";
 import { MdCall, MdOutlineMail } from "react-icons/md";
 
-const Header = () => {
+function Header() {
     return (
         <div>
             <div className="flex lg:gap-5 gap-1 lg:flex-row flex-col items-center justify-center py-2 bg-black text-white">
@@ -11,6 +11,6 @@ const Header = () => {
             <Navigation></Navigation>
         </div>
     );
-};
+}
 
 export default Header;

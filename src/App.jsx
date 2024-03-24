@@ -9,8 +9,7 @@ function App() {
     <>
      <div>
       <Header></Header>
-       <h2 className='text-center font-bold text-xl'>This is main page</h2>
-       <div className='flex items-center justify-center'>
+       <div>
             <Outlet/>
        </div>
        <Footer></Footer>

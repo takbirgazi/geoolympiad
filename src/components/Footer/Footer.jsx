@@ -1,5 +1,5 @@
 import logo from "../../assets/images/logo.png";
-const Footer = () => {
+function Footer(){
     return (
         <footer className="footer p-10 bg-neutral text-neutral-content">
             <aside>
@@ -16,6 +16,6 @@ const Footer = () => {
             </nav>
         </footer>
     );
-};
+}
 
 export default Footer;

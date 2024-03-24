@@ -1,9 +1,11 @@
-const Home = () => {
+import Greeting from "../Greeting/Greeting";
+
+function Home() {
     return (
         <div>
-            <h2>This is Home component nav</h2>
+            <Greeting></Greeting>
         </div>
     );
-};
+}
 
 export default Home;
