@@ -6,6 +6,14 @@ import { useState } from "react";
 
 function Navigation() {
     const [active, setActive] = useState(true);
+    const [sticky, setSticky] = useState(false);
+    window.addEventListener("scroll", ()=>{
+        if(window.scrollY > 100){
+            setSticky(true);
+        }else{
+            setSticky(false);
+        }
+    });
     const navLinks = 
             <>
                 <NavLink to="/">Home</NavLink>
@@ -19,9 +27,8 @@ function Navigation() {
     const resNavHandeler = ()=>{
         setActive(!active);
     }
-    console.log(active);
     return (
-        <div className="border-b bg-gray-100">
+        <div className={`border-b bg-gray-100 ${sticky ? 'fixed w-full top-0' : ''}`}>
             <div className="flex justify-between items-center w-11/12 mx-auto">
                 <div>
                     <NavLink to="/"><img src={logo} className="h-12"  /></NavLink>

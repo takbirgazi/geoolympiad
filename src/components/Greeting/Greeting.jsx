@@ -1,21 +1,24 @@
 import singImg from "../../assets/images/sign-bl-2.png";
 import GreetingCard from "../GreetingCard/GreetingCard";
+import objectiveImg from "../../assets/images/objective.png"
+import visionImg from "../../assets/images/vision.png"
+import missionImg from "../../assets/images/mission.png"
 const cardInfo = [
     {
         id:1,
-        image: "./src/assets/images/objective.png",
+        image: objectiveImg,
         title: "OBJECTIVE OF BGO",
         desc: "The main objective of Bangladesh Geography Olympiad (BGO) is to disseminate the importance of geographical knowledge to interested students nationally."
     },
     {
         id:2,
-        image: "./src/assets/images/vision.png",
+        image: visionImg,
         title: "VISION",
         desc: "Encouraging young students to know about sustainable development with geographical theories and methodologies."
     },
     {
         id:3,
-        image: "./src/assets/images/mission.png",
+        image: missionImg,
         title: "MISSION",
         desc: "Bangladesh Geography Olympiad (BGO) is to disseminate the modern geographical skills through hands-on trainings and organizing geography events to tackle climate and environmental challenges."
     }
